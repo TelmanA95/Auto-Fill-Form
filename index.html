@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="inputWrapper">
+  <label for="company-input">Название компании или ИНН:</label>
+  <input type="text" id="company-input"  class=".company-input" placeholder="Введите Название, ИНН, ОРГН или адрес организации"/>
+  
+  <select id="company-select" size="4">
+    <option class="option" value="">Выберите компанию из списка...</option>
+  </select>
+</div>
+  <p class="warn">Неизвестная Организация</p>
+  
+  <label for="short-name">Сокращенное наименование:</label>
+  <input type="text" id="short-name" />
+  
+  <label for="full-name">Полное наименование:</label>
+  <input type="text" id="full-name" />
+  
+  <label for="inn-kpp">ИНН / КПП:</label>
+  <input type="text" id="inn-kpp" />
+  
+  <label for="address">Адрес:</label>
+  <input id="address"></input>
+
+</div>
+
+
+</body>
+</html>
+<script src="./app.js"></script>
