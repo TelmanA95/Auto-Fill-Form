@@ -17,7 +17,7 @@ function typeDescription(type) {
   return TYPES[type] || '';
 }
 
-function join(arr ) {
+function join(arr /*, separator */ ) {
   const separator = arguments.length > 1 ? arguments[1] : ", ";
   return arr.filter(Boolean).join(separator);
 }
@@ -26,6 +26,7 @@ function showSuggestion(suggestion) {
   const data = suggestion.data;
   if (!data)
     return;
+  console.log(data);
   type.textContent = typeDescription(data.type) + ' (' + data.type + ')';
 
   if (data.name) {
